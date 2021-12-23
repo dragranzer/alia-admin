@@ -1,0 +1,104 @@
+.container{
+    background: #F6F8FD;
+    display: flex;
+}
+
+.rightPage{
+    width:100%;
+    background-color: antiquewhite;
+}
+
+.myProduct{
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    /* background: aqua; */
+}
+
+.title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #0C145A;
+}
+
+.detail{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #9191A9;
+}
+
+.button{
+    margin-top: 30px;
+    display: flex;
+    gap: 2rem;
+}
+
+.addProduct{
+    width: 20%;
+    height: 40px;
+    background: #31B380;
+    border-radius: 100px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addFavProduct{
+    width: 20%;
+    height: 40px;
+    background: #7839F3;
+    border-radius: 100px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.addFavProduct:hover{
+    background: #b191f0;
+}
+
+.listProduct{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.listProduct img{
+    width: 100%;
+    height: auto;
+}
+
+.product{
+    width: 18%;
+}
+
+.icon{
+    width: 11%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    color: #FFCA42;
+    /* background-color: red; */
+}

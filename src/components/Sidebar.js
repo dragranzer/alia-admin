@@ -1,9 +1,17 @@
 import React from 'react';
 import styles from '../assets/css/Sidebar.module.css';
 import image from '../assets/img/pic.png';
+import {useHistory} from "react-router-dom";
 import * as FiIcons from "react-icons/fi";
 
 function Sidebar() {
+    let history = useHistory();
+    const goInbox = async () => {
+        history.push("/inbox")
+    }
+    const goProduct = async () => {
+        history.push("/")
+    }
     return (
         <div className={styles.container}>
             <div className={styles.profile}>
@@ -20,7 +28,7 @@ function Sidebar() {
                     <div className={styles.icon}>
                         <FiIcons.FiGrid size={30}/>
                     </div>
-                    <div className={styles.pagename}>
+                    <div className={styles.pagename} onClick={goProduct}>
                         My Product
                     </div>
                 </div>
@@ -28,7 +36,7 @@ function Sidebar() {
                     <div className={styles.icon}>
                         <FiIcons.FiMail size={30}/>
                     </div>
-                    <div className={styles.pagename}>
+                    <div className={styles.pagename} onClick={goInbox}>
                         Inbox
                     </div>
                 </div>

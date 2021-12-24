@@ -1,0 +1,88 @@
+.container{
+    background: #F6F8FD;
+    display: flex;
+}
+
+.rightPage{
+    width:100%;
+    background-color: #F6F8FD;
+}
+
+.myProduct{
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    /* background: aqua; */
+}
+
+.title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #0C145A;
+}
+
+.detail{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #9191A9;
+}
+
+.formBox{
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 31px;
+    min-height: 500px;
+    padding-top: 30px;
+    margin-top: 40px;
+}
+
+.inputText{
+    width: 80%;
+    /* background: red; */
+    margin: auto;
+}
+
+.item input{
+    background: #F5F5F7;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    height: 40px;
+    width: 100%;
+}
+
+.title2{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18.14px;
+    line-height: 27px;
+
+    color: #0C0D36;
+}
+
+.item textarea{
+    background: #F5F5F7;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    height: 120px;
+    width: 100%;
+    font-family: Poppins;
+}
+
+input{
+    padding-left: 20px;
+}
+select{
+    padding-left: 20px;
+}
+textarea{
+    padding-left: 20px;
+}

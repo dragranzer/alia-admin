@@ -1,0 +1,127 @@
+.container{
+    background: #F6F8FD;
+    display: flex;
+}
+
+.rightPage{
+    width:100%;
+    height: 750px;
+    background-color: #F6F8FD;
+    overflow-y: scroll;
+}
+
+.myProduct{
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    /* background: aqua; */
+}
+
+.title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #0C145A;
+}
+
+.detail{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #9191A9;
+}
+
+.listInbox{
+    width: 90%;
+    background: #FFFFFF;
+    border-radius: 31px;
+    min-height: 450px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.data{
+    border: 0 solid;
+    min-height: 30px;
+    background: #F3F3F3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.dataList{
+    border: 0 solid;
+    min-height: 30px;
+    background: #F3F3F3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    /* align-items: center; */
+    padding-left: 30px;
+}
+
+.validation{
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.tolak{
+    height: 30px;
+    width: 45%;
+    background: #F44336;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tolak:hover{
+    background: #c91c10;
+}
+
+.terima{
+    width: 45%;
+    background: #31B380;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.terima:hover{
+    background: #0b7e50;
+}

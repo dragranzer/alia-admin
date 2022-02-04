@@ -6,7 +6,7 @@ import 'react-quill/dist/quill.snow.css';
 import 'react-quill/dist/quill.bubble.css';
 import 'react-quill/dist/quill.core.css';
 
-function TambahProduct() {
+function Product() {
     const [value, setValue] = useState('');
     const [spesifikasiKiri, setSpekKiri] = useState('');
     const [spesifikasiKanan, setSpekKanan] = useState('');
@@ -14,17 +14,6 @@ function TambahProduct() {
     const [ fileName, setFileName ] = useState(null)
     const [ doc, setDoc ] = useState(null)
     const [ docName, setDocName ] = useState(null)
-    const [data, setData] = useState({
-        nama:"",
-        category:""
-    })
-    const handleChange = (e) => {
-        setData({
-            ...data,
-            [e.target.name] : e.target.value
-        })
-        console.log(data)
-    }
  
     const fileToBase64 = (file, cb) => {
         const reader = new FileReader()
@@ -62,20 +51,16 @@ function TambahProduct() {
             }
         })
     }
-
-    
-    console.log(doc);
-    console.log(docName);
-    return (
-        <div className={styles.container}>
+  return <div>
+      <div className={styles.container}>
             <Sidebar isHere="myproduct"/>
             <div className={styles.rightPage}>
                 <div className={styles.myProduct}>
                     <div className={styles.title}>
-                        Create New Product
+                        Edit Product
                     </div>
                     <div className={styles.detail}>
-                        Buat Pesanan Baru
+                        Melakukan Edit Data dari Product yang sudah ada
                     </div>
                     <div className={styles.formBox}>
                         <div className={styles.inputText}>
@@ -83,15 +68,13 @@ function TambahProduct() {
                                 <div className={styles.title2}>
                                     Nama Produk
                                 </div>
-                                <input type="text" placeholder="Masukkan Nama Produk..."
-                                    name="nama" value={data.nama} onChange={handleChange}/>
+                                <input type="text" placeholder="Masukkan Nama Produk..."/>
                             </div>
                             <div className={styles.item}>
                                 <div className={styles.title2}>
                                     Category
                                 </div>
-                                <input type="text" placeholder="Masukkan Kategori Produk ..."
-                                    name="category" value={data.category} onChange={handleChange}/>
+                                <input type="text" placeholder="Masukkan Kategori Produk ..."/>
                             </div>
                             <div className={styles.item}>
                                 <div className={styles.title2}>
@@ -124,6 +107,9 @@ function TambahProduct() {
                                         onChange={onUploadFileChange}
                                         className={styles.inputFile}
                                     />
+                                    <div className={styles.uploadButton}>
+                                        Upload
+                                    </div>
                                 </div>
                             </div>
                             <div className={styles.uploadFile}>
@@ -137,21 +123,18 @@ function TambahProduct() {
                                         onChange={onUploadDocChange}
                                         className={styles.inputFile}
                                     />
+                                    <div className={styles.uploadButton}>
+                                        Upload
+                                    </div>
                                 </div>
                             </div>
-                            <div className={styles.btnSubmit}>
-                                <div className={styles.uploadButton}>
-                                    Upload
-                                </div>
-                            </div>
-                            
                         </div>
                     </div>
                 </div>
                 
             </div>
-        </div>
-    )
+      </div>
+  </div>;
 }
 
-export default TambahProduct
+export default Product;

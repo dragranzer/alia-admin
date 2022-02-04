@@ -5,7 +5,9 @@
 
 .rightPage{
     width:100%;
+    height: 750px;
     background-color: #F6F8FD;
+    overflow-y: scroll;
 }
 
 .myProduct{
@@ -37,15 +39,22 @@
     width: 100%;
     background: #FFFFFF;
     border-radius: 31px;
-    min-height: 500px;
+    min-height: 300px;
+    /* height: 1000px; */
     padding-top: 30px;
     margin-top: 40px;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .inputText{
     width: 80%;
     /* background: red; */
     margin: auto;
+}
+
+.item{
+    margin-bottom: 20px;
 }
 
 .item input{
@@ -85,4 +94,92 @@ select{
 }
 textarea{
     padding-left: 20px;
+}
+
+.editor {
+    height: 200px;
+    /* added these styles */
+    flex: 1;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+.spek {
+    height: 200px;
+    /* added these styles */
+    flex: 1;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.spesifikasi{
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* align-items: center; */
+}
+
+.spekKiri{
+    width: 50%;
+}
+
+.spekKanan{
+    width: 50%;
+}
+
+.inputFile{
+    border: 1px solid;
+    width: 100%;
+    height: 24px;
+    font-size: 16px;
+    border-radius: 0;
+    padding: 0;
+    display: flex;
+    /* align-items: center;
+    justify-content: center;
+    background-color: red; */
+}
+
+.uploadButton{
+    width: 20%;
+    height: 27px;
+    background-color: #7839F3;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.uploadButton:hover{
+    background-color: #a179f1;
+    cursor: pointer;
+}
+
+.inputImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.uploadFile{
+    margin-top: 30px;
+    /* background-color: aqua; */
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.btnSubmit{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-end;
 }

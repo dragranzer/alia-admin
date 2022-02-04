@@ -1,7 +1,8 @@
 .container{
     width: 30%;
-    height: 760px;
+    height: 750px;
     background-color: #FFFFFF;
+    /* position: fixed; */
 }
 
 .profile{
@@ -33,7 +34,7 @@
 }
 
 .data{
-    width: 50%;
+    /* width: 50%; */
     margin-top: 40px;
     margin-left: 40px;
     display: flex;
@@ -67,4 +68,18 @@
 
 .pagename:hover{
     color: #0C145A;
+}
+
+.menyala{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #0C145A;
+    cursor: pointer;
+}
+
+.menyalaIcon{
+    color: #4D17E2;
 }

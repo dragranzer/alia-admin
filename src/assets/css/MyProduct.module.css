@@ -22,6 +22,9 @@
     font-size: 32px;
     line-height: 48px;
     color: #0C145A;
+    cursor: pointer;
+    /* background-color: aqua; */
+    width: 19%;
 }
 
 .detail{
@@ -105,5 +108,62 @@
     display: flex;
     justify-content: flex-end;
     color: #FFCA42;
+    cursor: pointer;
     /* background-color: red; */
+}
+
+.pilihBarang{
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 450px;
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.category{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.jenisProduct{
+    font-size: 18px;
+    cursor: pointer;
+    width: max-content;
+}
+
+.jenisProduct:hover{
+    font-size: 24px;
+}
+
+.name{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.edit{
+    background-color: rgb(11, 132, 245);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.delete{
+    background-color: rgb(250, 71, 71);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 25px;
+}
+
+.barang{
+    /* background-color: aqua; */
+    width: 30%;
 }

@@ -125,6 +125,7 @@
 }
 
 .navigation{
+    height: 40px;
     display: flex;
     justify-content: space-between;
 }
@@ -153,6 +154,10 @@
     cursor: pointer;
 }
 
+.next:hover{
+    font-size: 24px;
+}
+
 .text{
     margin-top: -5px;
 }
@@ -162,4 +167,8 @@
     align-items: center;
     font-size: 20px;
     cursor: pointer;
+}
+
+.prev:hover{
+    font-size: 24px;
 }

@@ -69,6 +69,7 @@ function MyProduct() {
 
         const channgeModePilih = () => {
             setPilihBarang(true)
+            console.log(pilihBarang)
         }
 
     return (
@@ -82,23 +83,34 @@ function MyProduct() {
                     <div className={styles.detail}>
                         Pesanan yang masuk
                     </div>
-                    <div className={styles.button}>
-                        <div className={styles.addProduct} onClick={redirectAddProduct}>
-                            Tambah Produk
+                    <div className={styles.listButton}>
+                        <div className={styles.button}>
+                            <div className={styles.addProduct} onClick={redirectAddProduct}>
+                                Tambah Produk
+                            </div>
+                            {
+                                pilihBarang ?
+                                <></>
+                                :
+                                <div className={styles.addFavProduct} onClick={changeModeAdd}>
+                                {
+                                    addMode ?
+                                    "Selesai"
+                                    :
+                                    "Edit Produk Pilihan"
+                                }
+                                </div>
+                            }
                         </div>
                         {
-                            pilihBarang ?
+                            pilihBarang ? 
                             <></>
                             :
-                            <div className={styles.addFavProduct} onClick={changeModeAdd}>
-                            {
-                                addMode ?
-                                "Selesai"
-                                :
-                                "Pilih Produk Pilihan"
-                            }
+                            <div className={styles.backButton} onClick={channgeModePilih}>
+                                Kembali ke mode pilih barang
                             </div>
                         }
+                        
                     </div>
                     <div>
                         {
@@ -126,9 +138,6 @@ function MyProduct() {
                             </div>
                             :
                             <div className={styles.listProduct}>
-                                {
-                                    console.log(product)
-                                }
                             {
                                 product.map((item, index)=>(
                                     <DetailProduct 

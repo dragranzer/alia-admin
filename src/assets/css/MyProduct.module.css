@@ -37,13 +37,15 @@
 }
 
 .button{
-    margin-top: 30px;
     display: flex;
+    /* align-items: center; */
     gap: 2rem;
+    width: 70%;
+    /* background-color: red; */
 }
 
 .addProduct{
-    width: 20%;
+    width: 30%;
     height: 40px;
     background: #31B380;
     border-radius: 100px;
@@ -65,7 +67,7 @@
 }
 
 .addFavProduct{
-    width: 20%;
+    width: 30%;
     height: 40px;
     background: #7839F3;
     border-radius: 100px;
@@ -151,6 +153,11 @@
     border-radius: 5px;
     height: 25px;
     margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.edit:hover{
+    background-color: rgb(7, 82, 153);
 }
 
 .delete{
@@ -161,9 +168,44 @@
     align-items: center;
     border-radius: 5px;
     height: 25px;
+    cursor: pointer;
+}
+
+.delete:hover{
+    background-color: rgb(199, 33, 33);
 }
 
 .barang{
     /* background-color: aqua; */
     width: 30%;
+}
+
+.listButton{
+    margin-top: 30px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backButton{
+    width: 30%;
+    height: 40px;
+    background: #f33939;
+    border-radius: 100px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.backButton:hover{
+    background: #ec6969;
 }

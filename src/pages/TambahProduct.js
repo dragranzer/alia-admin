@@ -99,19 +99,11 @@ function TambahProduct() {
                                 </div>
                                 <ReactQuill theme="snow" value={value} onChange={setValue} className={styles.editor}/>
                             </div>
-                            <div className={styles.spesifikasi}>
-                                <div className={styles.spekKiri}>
-                                    <div className={styles.title2}>
-                                        Spesifikasi Tabel Kiri
-                                    </div>
-                                    <ReactQuill theme="snow" value={spesifikasiKiri} onChange={setSpekKiri} className={styles.spek}/>
+                            <div className={styles.item}>
+                                <div className={styles.title2}>
+                                    Spesifikasi
                                 </div>
-                                <div className={styles.spekKanan}>
-                                    <div className={styles.title2}>
-                                        Spesifikasi Tabel Kanan
-                                    </div>
-                                    <ReactQuill theme="snow" value={spesifikasiKanan} onChange={setSpekKanan} className={styles.spek}/>
-                                </div>
+                                <ReactQuill theme="snow" value={spesifikasiKiri} onChange={setSpekKiri} className={styles.editor}/>
                             </div>
                             <div className={styles.uploadFile}>
                                 <div className={styles.title2}>
